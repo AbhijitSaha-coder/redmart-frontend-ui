@@ -1,0 +1,193 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedMart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/"><h1>RedMart</h1></a>
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20" alt="">
+            <div>
+                <p>Deliver to</p>
+                <h1>Bengaluru, India</h1>
+            </div>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" height="12" alt="">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search RedMart">
+            <img src="./assets/search_icon.png" class="nav-search-icon" alt="">
+        </div>
+        <div class="nav-language">
+            <img src="./assets/us_flag.png" width="25px" alt="">
+            <p>EN</p>
+            <img src="./assets/dropdown_icon.png" width="8px" alt="">
+        </div>
+        <div class="nav-texts">
+            <p><a href="/login.html">Hello, sign in</a></p>
+            <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""> </h1>
+        </div>
+        <div class="nav-texts">
+            <p>Orders</p>
+            <h1>& History</h1>
+        </div>
+        <a href="/login.html" class="mobile-user-icon" style="display: none;">
+            <img src="./assets/user.png">
+        </a>
+        <a href="/cart.html" class="nav-cart">
+            <img src="./assets/cart_icon.png" width="35px" alt="">
+            <h4>Cart</h4>
+        </a>
+    </nav>
+    <div class="nav-bottom">
+        <div>
+            <img src="./assets/menu_icon.png" width="25px" alt="">
+            <p>All</p>
+        </div>
+        <p>Today's Deals</p>
+        <p>Fresh Picks</p>
+        <p>Veg & Fruits</p>
+        <p>Snacks & Beverages</p>
+        <p>Household</p>
+    </div>
+
+    <!-- Header Slider -->
+    <div class="header-slider" id="slider">
+        <a href="#" class="control_prev">&#129144</a>
+        <a href="#" class="control_next">&#129146</a>
+        <ul>
+            <img class="header-img" src="./assets/grocery_banner1.jpg" alt="Fresh Fruits">
+            <img class="header-img" src="./assets/grocery_banner2.jpg" alt="Vegetables">
+            <img class="header-img" src="./assets/grocery_banner3.jpg" alt="Snacks & Drinks">
+            <img class="header-img" src="./assets/grocery_banner4.jpg" alt="Dairy & Eggs">
+        </ul>
+    </div>
+
+    <!-- Categories Boxes -->
+    <div class="header-box box-row">
+        <div class="box-col">
+            <h3>Fresh Fruits</h3>
+            <img src="./assets/category_fruits.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Vegetables</h3>
+            <img src="./assets/category_vegetables.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Dairy & Eggs</h3>
+            <img src="./assets/category_dairy.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Snacks & Beverages</h3>
+            <img src="./assets/category_snacks.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Household Essentials</h3>
+            <img src="./assets/category_household.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Personal Care</h3>
+            <img src="./assets/category_personal_care.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Pet Food</h3>
+            <img src="./assets/category_pet_food.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Bakery & Snacks</h3>
+            <img src="./assets/category_bakery.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+
+    <!-- Products Slider: Best Sellers -->
+    <div class="products-slider">
+        <h2>Best Sellers in Groceries</h2>
+        <div class="products">
+            <img src="./assets/product_fruit_pack.jpg" alt="Mixed Fruits Pack">
+            <img src="./assets/product_milk.jpg" alt="Fresh Milk 1L">
+            <img src="./assets/product_eggs.jpg" alt="12 Eggs Pack">
+            <img src="./assets/product_bread.jpg" alt="Whole Wheat Bread">
+            <img src="./assets/product_snacks.jpg" alt="Potato Chips">
+            <img src="./assets/product_juice.jpg" alt="Orange Juice">
+            <img src="./assets/product_rice.jpg" alt="Basmati Rice 5kg">
+            <img src="./assets/product_oil.jpg" alt="Sunflower Oil">
+            <img src="./assets/product_detergent.jpg" alt="Laundry Detergent">
+            <img src="./assets/product_soap.jpg" alt="Bath Soap Pack">
+        </div>
+    </div>
+
+    <!-- Deals Under ₹100 -->
+    <div class="products-slider-with-price">
+        <h2>Deals Under ₹100</h2>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product_mango.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>15% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>85</span> List Price:₹100</p>
+                <h4>Fresh Mangoes (1kg)</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product_tomato.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>10% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>45</span> List Price:₹50</p>
+                <h4>Tomatoes (1kg)</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product_banana.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>20% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>80</span> List Price:₹100</p>
+                <h4>Bananas (1 Dozen)</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product_eggs_small.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>12% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>88</span> List Price:₹100</p>
+                <h4>Eggs (6 pack)</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h1>RedMart</h1>
+        <p>© 2025-2026, RedMart.com, Inc. or its affiliates</p>
+    </footer>
+
+</body>
+
+</html>

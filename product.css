@@ -1,0 +1,145 @@
+body{
+    background: #141414;
+    color: #ffffff;
+}
+
+.breadcrum{
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #b3b3b3;
+    background-color: #141414;
+}
+
+.product-display{
+    background-color: #141414;
+    min-height: 100%;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.product-list-image img{
+   border: 1px solid #333333;
+   border-radius: 10px;
+}
+
+.product-title{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.product-store{
+    margin-top: 5px;
+    color:#e50914;
+    font-size: 14px;
+}
+
+.product-rating p{
+    color: #e50914;
+}
+
+.product-rating p span{
+    color: #ffffff;
+    background-color: #e50914;
+}
+
+.product-prices div p{
+    font-size: 26px;
+    color:#e50914;
+}
+
+.product-prices h5{
+    font-weight: 400;
+    color: #b3b3b3;
+}
+
+.product-prices p span{
+    color: #e50914;
+}
+
+.option{
+    border: 1px solid #333333;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.product-description h1{
+    color: #ffffff;
+}
+
+.product-d-purchase{
+    border: 1px solid #333333;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.product-d-purchase p span{
+    color: #e50914;
+}
+
+.product-stock{
+    color: #46d369;
+}
+
+.product-quantity{
+    background-color: #333333;
+    border-color: #444444;
+    color: #ffffff;
+}
+
+.product-d-purchase .btn{
+    background-color: #e50914;
+    color: #ffffff;
+}
+
+.product-d-purchase .product-buy{
+    background-color: #b20710;
+    color: #ffffff;
+}
+
+.product-seller-info{
+    color: #b3b3b3;
+}
+
+.product-seller-info-value{
+    color: #e50914;
+}
+
+.product-addtolist{
+    background: #1f1f1f;
+    border-color: #333333;
+    color: #ffffff;
+}
+
+.product-footer{
+    margin-top: 100px;
+}
+
+/* ---------- media query ---------- */
+@media only screen and (max-width: 900px){
+    .product-display{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 600px){
+    .breadcrum{
+        display: none;
+    }
+    
+    .product-list-image {
+        display: none;
+    }
+    .product-main-image img{
+        width: 100%;
+        padding: 20px;
+    }
+    .option{
+        padding: 6px 8px;
+    }
+    .option p{
+        display: none;
+    }
+    .product-d-purchase{
+        max-width: 90%;
+        margin: 20px auto 10px;
+    }
+}
