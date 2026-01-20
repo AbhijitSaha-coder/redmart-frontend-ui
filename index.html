@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedMart</title>
+    <title>DailyDrop</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
     <nav>
-        <a href="/"><h1>RedMart</h1></a>
+        <a href="/"><h1>DailyDrop</h1></a>
         <div class="nav-country">
             <img src="./assets/location_icon.png" height="20" alt="">
             <div>
@@ -23,7 +23,7 @@
                 <p>All</p>
                 <img src="./assets/dropdown_icon.png" height="12" alt="">
             </div>
-            <input type="text" class="nav-search-input" placeholder="Search RedMart">
+            <input type="text" class="nav-search-input" placeholder="Search DailyDrop">
             <img src="./assets/search_icon.png" class="nav-search-icon" alt="">
         </div>
         <div class="nav-language">
@@ -36,8 +36,8 @@
             <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""> </h1>
         </div>
         <div class="nav-texts">
-            <p>Orders</p>
-            <h1>& History</h1>
+            <p>Returns</p>
+            <h1>& Orders</h1>
         </div>
         <a href="/login.html" class="mobile-user-icon" style="display: none;">
             <img src="./assets/user.png">
@@ -53,141 +53,236 @@
             <p>All</p>
         </div>
         <p>Today's Deals</p>
-        <p>Fresh Picks</p>
-        <p>Veg & Fruits</p>
-        <p>Snacks & Beverages</p>
-        <p>Household</p>
+        <p>Customer Service</p>
+        <p>Registry</p>
+        <p>Gift Cards</p>
+        <p>Sell</p>
     </div>
 
-    <!-- Header Slider -->
     <div class="header-slider" id="slider">
         <a href="#" class="control_prev">&#129144</a>
         <a href="#" class="control_next">&#129146</a>
         <ul>
-            <img class="header-img" src="./assets/grocery_banner1.jpg" alt="Fresh Fruits">
-            <img class="header-img" src="./assets/grocery_banner2.jpg" alt="Vegetables">
-            <img class="header-img" src="./assets/grocery_banner3.jpg" alt="Snacks & Drinks">
-            <img class="header-img" src="./assets/grocery_banner4.jpg" alt="Dairy & Eggs">
+            <img class="header-img" src="./assets/header1.jpg" alt="">
+            <img class="header-img" src="./assets/header2.jpg" alt="">
+            <img class="header-img" src="./assets/header3.jpg" alt="">
+            <img class="header-img" src="./assets/header4.jpg" alt="">
+            <img class="header-img" src="./assets/header5.jpg" alt="">
+            <img class="header-img" src="./assets/header6.jpg" alt="">
         </ul>
     </div>
 
-    <!-- Categories Boxes -->
     <div class="header-box box-row">
         <div class="box-col">
-            <h3>Fresh Fruits</h3>
-            <img src="./assets/category_fruits.jpg" alt="">
+            <h3>Fruits & Vegetables</h3>
+            <img src="./assets/box1-1.jpg" alt="">
             <a href="/">Shop More</a>
         </div>
         <div class="box-col">
-            <h3>Vegetables</h3>
-            <img src="./assets/category_vegetables.jpg" alt="">
-            <a href="/">Shop More</a>
-        </div>
-        <div class="box-col">
-            <h3>Dairy & Eggs</h3>
-            <img src="./assets/category_dairy.jpg" alt="">
+            <h3>Dairy & Bakery</h3>
+            <img src="./assets/box1-2.jpg" alt="">
             <a href="/">Shop More</a>
         </div>
         <div class="box-col">
             <h3>Snacks & Beverages</h3>
-            <img src="./assets/category_snacks.jpg" alt="">
+            <img src="./assets/box1-3.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Instant Food</h3>
+            <img src="./assets/box1-4.jpg" alt="">
             <a href="/">Shop More</a>
         </div>
     </div>
 
     <div class="box-row">
         <div class="box-col">
-            <h3>Household Essentials</h3>
-            <img src="./assets/category_household.jpg" alt="">
-            <a href="/">Shop More</a>
-        </div>
-        <div class="box-col">
             <h3>Personal Care</h3>
-            <img src="./assets/category_personal_care.jpg" alt="">
+            <img src="./assets/box2-1.jpg" alt="">
             <a href="/">Shop More</a>
         </div>
         <div class="box-col">
-            <h3>Pet Food</h3>
-            <img src="./assets/category_pet_food.jpg" alt="">
+            <h3>Cleaning Essentials</h3>
+            <img src="./assets/box2-2.jpg" alt="">
             <a href="/">Shop More</a>
         </div>
         <div class="box-col">
-            <h3>Bakery & Snacks</h3>
-            <img src="./assets/category_bakery.jpg" alt="">
+            <h3>Pet Supplies</h3>
+            <img src="./assets/box2-3.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Baby Care</h3>
+            <img src="./assets/box2-4.jpg" alt="">
             <a href="/">Shop More</a>
         </div>
     </div>
 
-    <!-- Products Slider: Best Sellers -->
+
+
+
     <div class="products-slider">
-        <h2>Best Sellers in Groceries</h2>
+        <h2>Most Ordered Today</h2>
         <div class="products">
-            <img src="./assets/product_fruit_pack.jpg" alt="Mixed Fruits Pack">
-            <img src="./assets/product_milk.jpg" alt="Fresh Milk 1L">
-            <img src="./assets/product_eggs.jpg" alt="12 Eggs Pack">
-            <img src="./assets/product_bread.jpg" alt="Whole Wheat Bread">
-            <img src="./assets/product_snacks.jpg" alt="Potato Chips">
-            <img src="./assets/product_juice.jpg" alt="Orange Juice">
-            <img src="./assets/product_rice.jpg" alt="Basmati Rice 5kg">
-            <img src="./assets/product_oil.jpg" alt="Sunflower Oil">
-            <img src="./assets/product_detergent.jpg" alt="Laundry Detergent">
-            <img src="./assets/product_soap.jpg" alt="Bath Soap Pack">
+            <a href="/product.html"><img src="./assets/product_img.jpg" alt=""></a>
+            <img src="./assets/product1-1.jpg" alt="">
+            <img src="./assets/product1-2.jpg" alt="">
+            <img src="./assets/product1-3.jpg" alt="">
+            <img src="./assets/product1-4.jpg" alt="">
+            <img src="./assets/product1-5.jpg" alt="">
+            <img src="./assets/product1-6.jpg" alt="">
+            <img src="./assets/product1-7.jpg" alt="">
+            <img src="./assets/product1-8.jpg" alt="">
+            <img src="./assets/product1-9.jpg" alt="">
+            <img src="./assets/product1-10.jpg" alt="">
         </div>
     </div>
 
-    <!-- Deals Under ₹100 -->
+
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Stationery</h3>
+            <img src="./assets/box3-1.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Household Items</h3>
+            <img src="./assets/box3-2.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+
+
+
     <div class="products-slider-with-price">
-        <h2>Deals Under ₹100</h2>
+        <h2>Deals Under ₹199</h2>
         <div class="products">
             <div class="product-card">
                 <div class="product-img-container">
-                    <img src="./assets/product_mango.jpg" alt="">
-                </div>
-                <div class="product-offer">
-                    <p>15% off</p> <span>Deal</span>
-                </div>
-                <p class="product-price">₹ <span>85</span> List Price:₹100</p>
-                <h4>Fresh Mangoes (1kg)</h4>
-            </div>
-            <div class="product-card">
-                <div class="product-img-container">
-                    <img src="./assets/product_tomato.jpg" alt="">
-                </div>
-                <div class="product-offer">
-                    <p>10% off</p> <span>Deal</span>
-                </div>
-                <p class="product-price">₹ <span>45</span> List Price:₹50</p>
-                <h4>Tomatoes (1kg)</h4>
-            </div>
-            <div class="product-card">
-                <div class="product-img-container">
-                    <img src="./assets/product_banana.jpg" alt="">
+                    <img src="./assets/product2-1.jpg" alt="">
                 </div>
                 <div class="product-offer">
                     <p>20% off</p> <span>Deal</span>
                 </div>
-                <p class="product-price">₹ <span>80</span> List Price:₹100</p>
-                <h4>Bananas (1 Dozen)</h4>
+                <p class="product-price">₹<span>99</span> List Price:₹119</p>
             </div>
             <div class="product-card">
                 <div class="product-img-container">
-                    <img src="./assets/product_eggs_small.jpg" alt="">
+                    <img src="./assets/product2-2.jpg" alt="">
                 </div>
                 <div class="product-offer">
-                    <p>12% off</p> <span>Deal</span>
+                    <p>15% off</p> <span>Deal</span>
                 </div>
-                <p class="product-price">₹ <span>88</span> List Price:₹100</p>
-                <h4>Eggs (6 pack)</h4>
+                <p class="product-price">₹ <span>49</span> List Price:₹58</p>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-3.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>25% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>79</span> List Price:₹105</p>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-4.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>10% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>59</span> List Price:₹66</p>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-5.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>20% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>45</span> List Price:₹56</p>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-6.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>30% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>129</span> List Price:₹184</p>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-7.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>15% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>99</span> List Price:₹115</p>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-8.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>20% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>89</span> List Price:₹111</p>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-9.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>10% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>150</span> List Price:₹167</p>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-10.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>15% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>149</span> List Price:₹175</p>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/product2-11.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>20% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>8,01,00,000</span> List Price:₹10,01,00,000</p>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <h1>RedMart</h1>
-        <p>© 2025-2026, RedMart.com, Inc. or its affiliates</p>
-    </footer>
 
+
+    <div class="products-slider">
+        <h2>Most Ordered Today</h2>
+        <div class="products">
+            <img src="./assets/product1-1.jpg" alt="">
+            <img src="./assets/product1-2.jpg" alt="">
+            <img src="./assets/product1-3.jpg" alt="">
+            <img src="./assets/product1-4.jpg" alt="">
+            <img src="./assets/product1-5.jpg" alt="">
+            <img src="./assets/product1-6.jpg" alt="">
+            <img src="./assets/product1-7.jpg" alt="">
+            <img src="./assets/product1-8.jpg" alt="">
+            <img src="./assets/product1-9.jpg" alt="">
+            <img src="./assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <h1>DailyDrop</h1>
+        <p>© 2025-2026, DailyDrop.com, Inc. or its affiliates</p>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

@@ -5,22 +5,31 @@
 }
 
 .cart-left {
-    background-color: #181818;
+    background-color: white;
     padding: 20px;
-    color: #ffffff;
 }
 
 .cart-left h1 {
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 15px;
-    color: #ffffff;
 }
 
 .cart-left hr {
     border: none;
     height: 1px;
-    background-color: #2a2a2a;
+    background-color: #dadada;
+}
+
+/* Fix cart product image size */
+.product-cart-list img {
+    width: 140px;          /* fixed width */
+    height: 140px;         /* fixed height */
+    object-fit: contain;   /* keeps full product visible */
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    flex-shrink: 0;
 }
 
 .product-cart-list {
@@ -34,49 +43,41 @@
     display: flex;
     gap: 20px;
     font-size: 18px;
-    color: #ffffff;
 }
 
 .product-cart-bestseller {
     font-size: 12px;
     margin-top: 10px;
-    color: #b3b3b3;
 }
 
 .product-cart-bestseller span {
     font-size: 13px;
-    background-color: #E50914;
-    color: #ffffff;
+    background-color: #c45500;
+    color: white;
     padding: 3px 8px;
 }
 
 .product-cart-stock {
     font-size: 13px;
-    color: #46d369;
+    color: #007600;
     margin: 4px 0px;
 }
-
 .product-cart-delivery {
     font-size: 15px;
-    color: #b3b3b3;
 }
-
 .product-cart-returns {
     font-size: 15px;
-    color: #E50914;
+    color: #007185;
     font-weight: 400;
 }
-
 .product-cart-giftoption{
-    color: #b3b3b3;
+    color: #494949;
     font-size: 13px;
     margin: 3px 0px;
 }
-
 .product-cart-giftoption span{
-    color: #E50914;
+    color: #007185;
 }
-
 .product-cart-specs{
     max-width: 150px;
     display: grid;
@@ -84,82 +85,61 @@
     row-gap: 3px;
     font-size: 13px;
     margin: 7px 0px;
-    color: #b3b3b3;
 }
-
 .product-cart-list-action{
     display: flex;
     gap: 12px;
     font-size: 14px;
-    color: #E50914;
+    color: #007185;
 }
-
 .product-cart-list-action hr{
     height: 20px;
     width: 1px;
-    background-color: #2a2a2a;
+    background-color: #cfcfcf;
 }
-
 .product-cart-list-action select{
-    padding:5px;
-    border-radius: 6px;
-    background-color: #2a2a2a;
-    color: #ffffff;
-    border: 1px solid #444;
+ padding:5px;
+ border-radius: 6px;
+ background-color: #f3f3f3;
 }
-
 .cart-list-subtotal{
     text-align: right;
     font-size: 20px;
     margin-top: 10px;
-    color: #ffffff;
 }
-
 .cart-right{
-    background-color: #181818;
+    background-color: white;
     padding: 20px;
     max-height: 220px;
     min-width: 280px;
-    color: #ffffff;
 }
-
 .cart-free-delivery{
     display: flex;
     font-size: 13px;
-    color: #b3b3b3;
 }
-
 .cart-subtotal{
     margin-top: 20px;
     font-size: 18px;
     font-weight: 500;
-    color: #ffffff;
 }
-
 .cart-right-gift{
     margin: 7px 0px;
     font-size: 14px;
-    color: #b3b3b3;
 }
-
 .cart-right button{
     width: 100%;
     height: 31px;
     margin: 15px 0px;
-    background: #E50914;
-    color: #ffffff;
+    background: #FFD814;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
-
 .cart-right button:hover{
-    background: #B20710;
+    background: #ebc712;
 }
-
 .footer-cart{
     margin-top: 50px;
-    color: #b3b3b3;
 }
 
 /* ------------- media query -------------- */
@@ -198,5 +178,70 @@
     }
     .cart-right{
         min-width: 100%;
+    }
+    
+}
+
+/* ---------- ADDITIONAL MEDIA QUERIES (STRICT) ---------- */
+
+/* Large desktops */
+@media only screen and (max-width: 1200px) {
+    .cart {
+        margin: 15px;
+    }
+}
+
+/* Tablets & small laptops */
+@media only screen and (max-width: 992px) {
+    .cart-left,
+    .cart-right {
+        width: 100%;
+    }
+
+    .cart-right {
+        max-height: none;
+    }
+}
+
+/* Tablets & large phones */
+@media only screen and (max-width: 768px) {
+    .product-cart-list {
+        flex-wrap: wrap;
+    }
+
+    .product-cart-list img {
+        margin-bottom: 10px;
+    }
+
+    .product-cart-list-action {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+}
+
+/* Small phones */
+@media only screen and (max-width: 480px) {
+    .cart-left h1 {
+        font-size: 22px;
+    }
+
+    .cart-list-subtotal {
+        font-size: 16px;
+    }
+
+    .cart-free-delivery {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+
+/* Very small devices */
+@media only screen and (max-width: 360px) {
+    .product-cart-titleprice {
+        gap: 8px;
+    }
+
+    .cart-right button {
+        height: 34px;
     }
 }
